@@ -10,7 +10,10 @@
     <div class="container">
         <h1>Asta Personaggi per Torneo Ape Escape 2</h1>
         <div id="user-info">
-            <p>Giocatore Corrente: <span id="player-name">Caricamento...</span> | Crediti: <span id="credits">0</span></p>
+            <label for="player-name-input">Inserisci il tuo nome:</label>
+            <input type="text" id="player-name-input" placeholder="Nome giocatore">
+            <button onclick="setPlayerName()">Conferma Nome</button>
+            <p>Giocatore: <span id="player-name">Nessuno</span> | Crediti: <span id="credits">0</span></p>
         </div>
         <div id="character-list">
             <h2>Personaggi Disponibili</h2>
@@ -46,6 +49,7 @@
             <ul id="auction-results"></ul>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
