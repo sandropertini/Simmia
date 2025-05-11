@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asta Personaggi Videogioco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Asta Personaggi per Torneo</h1>
+        <div id="user-info">
+            <p>Giocatore: <span id="player-name">Giocatore 1</span> | Crediti: <span id="credits">1000</span></p>
+        </div>
+        <div id="character-list">
+            <h2>Personaggi Disponibili</h2>
+            <ul id="characters"></ul>
+        </div>
+        <div id="auction">
+            <h2>Asta in Corso</h2>
+            <p>Personaggio: <span id="current-character">Nessuno</span></p>
+            <p>Tempo Rimanente: <span id="timer">30</span> secondi</p>
+            <input type="number" id="bid-input" placeholder="Inserisci offerta" min="1">
+            <button onclick="placeBid()">Fai Offerta</button>
+        </div>
+        <div id="results">
+            <h2>Risultati</h2>
+            <ul id="auction-results"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
